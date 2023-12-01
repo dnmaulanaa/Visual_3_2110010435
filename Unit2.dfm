@@ -39,6 +39,14 @@ object Form2: TForm2
         Caption = 'tbl_puskesmas'
         OnClick = tblpuskesmas1Click
       end
+      object jadwalpraktekdokter1: TMenuItem
+        Caption = 'jadwal_praktek_dokter'
+        OnClick = jadwalpraktekdokter1Click
+      end
+      object rekammedis1: TMenuItem
+        Caption = 'rekam_medis'
+        OnClick = rekammedis1Click
+      end
     end
     object profiel1: TMenuItem
       Caption = 'Profiel'

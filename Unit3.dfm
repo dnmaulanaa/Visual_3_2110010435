@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 255
-  Top = 204
-  Width = 1034
+  Left = 146
+  Top = 200
+  Width = 906
   Height = 540
   Caption = 'Form3'
   Color = clBtnFace
@@ -249,8 +249,8 @@ object Form3: TForm3
     UserName = 'frxDBDataset'
     CloseDataSource = False
     DataSet = zqry2
-    Left = 896
-    Top = 44
+    Left = 808
+    Top = 28
   end
   object frxReport1: TfrxReport
     Version = '4.0.11'
@@ -267,8 +267,8 @@ object Form3: TForm3
       'begin'
       ''
       'end.')
-    Left = 896
-    Top = 92
+    Left = 808
+    Top = 76
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -573,7 +573,7 @@ object Form3: TForm3
     SQL.Strings = (
       'select * from userr')
     Params = <>
-    Left = 896
-    Top = 156
+    Left = 808
+    Top = 140
   end
 end

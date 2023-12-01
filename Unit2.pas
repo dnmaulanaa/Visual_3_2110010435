@@ -17,11 +17,15 @@ type
     tbl3: TMenuItem;
     tblpegawai1: TMenuItem;
     tblpuskesmas1: TMenuItem;
+    jadwalpraktekdokter1: TMenuItem;
+    rekammedis1: TMenuItem;
     procedure tbl1Click(Sender: TObject);
     procedure tbl2Click(Sender: TObject);
     procedure tbl3Click(Sender: TObject);
     procedure tblpegawai1Click(Sender: TObject);
     procedure tblpuskesmas1Click(Sender: TObject);
+    procedure jadwalpraktekdokter1Click(Sender: TObject);
+    procedure rekammedis1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +37,7 @@ var
 
 implementation
 
-uses Unit3, Unit4, Unit5, Unit6;
+uses Unit3, Unit4, Unit5, Unit6, Unit7, Unit8, Unit9;
 
 {$R *.dfm}
 
@@ -60,6 +64,16 @@ end;
 procedure TForm2.tblpuskesmas1Click(Sender: TObject);
 begin
 form7.show;
+end;
+
+procedure TForm2.jadwalpraktekdokter1Click(Sender: TObject);
+begin
+form8.show;
+end;
+
+procedure TForm2.rekammedis1Click(Sender: TObject);
+begin
+form9.show;
 end;
 
 end.

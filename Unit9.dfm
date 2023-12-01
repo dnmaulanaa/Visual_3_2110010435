@@ -1,9 +1,9 @@
-object Form5: TForm5
-  Left = 159
-  Top = 156
-  Width = 995
-  Height = 485
-  Caption = 'Form5'
+object Form9: TForm9
+  Left = 155
+  Top = 263
+  Width = 1044
+  Height = 540
+  Caption = 'Form9'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,12 +11,24 @@ object Form5: TForm5
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
-  object TLabel
-    Left = 96
-    Top = 48
+  object lbll1: TLabel
+    Left = 92
+    Top = 36
+    Width = 111
+    Height = 15
+    Caption = 'ID_REKAM_MEDIS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbll3: TLabel
+    Left = 92
+    Top = 68
     Width = 68
     Height = 16
     Caption = 'ID_PASIEN'
@@ -27,12 +39,25 @@ object Form5: TForm5
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object l4: TLabel
+  object lbll6: TLabel
+    Left = 88
+    Top = 96
+    Width = 71
+    Height = 16
+    Caption = 'ID_DOKTER'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbll4: TLabel
     Left = 96
-    Top = 68
-    Width = 93
+    Top = 132
+    Width = 102
     Height = 16
-    Caption = 'NAMA_PASIEN'
+    Caption = 'TGL_KUNJUNGAN'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -40,64 +65,12 @@ object Form5: TForm5
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object l7: TLabel
-    Left = 100
-    Top = 92
-    Width = 76
+  object lbll7: TLabel
+    Left = 92
+    Top = 156
+    Width = 70
     Height = 16
-    Caption = 'TGL_PASIEN'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label1: TLabel
-    Left = 100
-    Top = 116
-    Width = 94
-    Height = 16
-    Caption = 'JENIS KELAMIN'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label2: TLabel
-    Left = 100
-    Top = 140
-    Width = 55
-    Height = 16
-    Caption = 'ALAMAT'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label3: TLabel
-    Left = 100
-    Top = 164
-    Width = 65
-    Height = 16
-    Caption = 'NMR_TELP'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label4: TLabel
-    Left = 100
-    Top = 188
-    Width = 148
-    Height = 16
-    Caption = 'ASURANSI_KESEHATAN'
+    Caption = 'DIAGNOSIS'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -106,7 +79,7 @@ object Form5: TForm5
     ParentFont = False
   end
   object b1: TButton
-    Left = 212
+    Left = 204
     Top = 252
     Width = 75
     Height = 29
@@ -116,9 +89,9 @@ object Form5: TForm5
   end
   object b2: TButton
     Left = 312
-    Top = 248
+    Top = 256
     Width = 75
-    Height = 33
+    Height = 25
     Caption = 'Simpan'
     TabOrder = 1
     OnClick = b2Click
@@ -159,77 +132,87 @@ object Form5: TForm5
     TabOrder = 5
     OnClick = b6Click
   end
-  object e_4: TEdit
-    Left = 264
+  object e_2: TEdit
+    Left = 216
     Top = 40
-    Width = 273
+    Width = 169
     Height = 21
     TabOrder = 6
   end
-  object e_5: TEdit
-    Left = 264
-    Top = 64
-    Width = 273
+  object e_3: TEdit
+    Left = 216
+    Top = 72
+    Width = 169
     Height = 21
     TabOrder = 7
   end
-  object e_6: TEdit
-    Left = 264
-    Top = 88
-    Width = 273
+  object e_4: TEdit
+    Left = 216
+    Top = 96
+    Width = 169
     Height = 21
     TabOrder = 8
   end
-  object DBGrid1: TDBGrid
-    Left = 80
-    Top = 304
-    Width = 729
-    Height = 137
-    DataSource = ds1
+  object e_5: TEdit
+    Left = 216
+    Top = 128
+    Width = 169
+    Height = 21
     TabOrder = 9
+  end
+  object e_6: TEdit
+    Left = 216
+    Top = 152
+    Width = 169
+    Height = 21
+    TabOrder = 10
+  end
+  object dgdbgrd1: TDBGrid
+    Left = 100
+    Top = 292
+    Width = 761
+    Height = 157
+    DataSource = ds1
+    TabOrder = 11
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
-    OnCellClick = DBGrid1CellClick
-  end
-  object e_7: TEdit
-    Left = 264
-    Top = 112
-    Width = 273
-    Height = 21
-    TabOrder = 10
-  end
-  object e_8: TEdit
-    Left = 264
-    Top = 136
-    Width = 273
-    Height = 21
-    TabOrder = 11
-  end
-  object e_9: TEdit
-    Left = 264
-    Top = 160
-    Width = 273
-    Height = 21
-    TabOrder = 12
-  end
-  object e_10: TEdit
-    Left = 264
-    Top = 184
-    Width = 273
-    Height = 21
-    TabOrder = 13
+    OnCellClick = dgdbgrd1CellClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id_rekam_medis'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'id_pasien'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'id_dokter'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'tgl_kunjungan'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'diagnosis'
+        Visible = True
+      end>
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
     Properties.Strings = (
-      'select * from tb_fasilitas'
-      ''
-      ''
+      'select * from tb_dokter'
       'controls_cp=GET_ACP')
     Connected = True
     HostName = 'Localhost'
@@ -247,12 +230,12 @@ object Form5: TForm5
     Connection = con1
     Active = True
     SQL.Strings = (
-      'select * from tb_pasien'
+      'select * from rekam_medis'
       ''
       '')
     Params = <>
     Properties.Strings = (
-      'select * from tb_fasilitas')
+      'select * from tb_dokter')
     Left = 156
     Top = 232
   end

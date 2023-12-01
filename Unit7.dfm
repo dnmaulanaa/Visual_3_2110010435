@@ -1,8 +1,8 @@
 object Form7: TForm7
   Left = 189
-  Top = 127
+  Top = 126
   Width = 1044
-  Height = 542
+  Height = 543
   Caption = 'Form7'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -11,6 +11,7 @@ object Form7: TForm7
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object TLabel

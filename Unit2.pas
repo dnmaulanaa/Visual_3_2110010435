@@ -16,10 +16,12 @@ type
     Logout1: TMenuItem;
     tbl3: TMenuItem;
     tblpegawai1: TMenuItem;
+    tblpuskesmas1: TMenuItem;
     procedure tbl1Click(Sender: TObject);
     procedure tbl2Click(Sender: TObject);
     procedure tbl3Click(Sender: TObject);
     procedure tblpegawai1Click(Sender: TObject);
+    procedure tblpuskesmas1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,6 +55,11 @@ end;
 procedure TForm2.tblpegawai1Click(Sender: TObject);
 begin
 form6.show;
+end;
+
+procedure TForm2.tblpuskesmas1Click(Sender: TObject);
+begin
+form7.show;
 end;
 
 end.

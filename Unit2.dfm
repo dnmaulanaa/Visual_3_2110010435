@@ -35,6 +35,10 @@ object Form2: TForm2
         Caption = 'tbl_pegawai'
         OnClick = tblpegawai1Click
       end
+      object tblpuskesmas1: TMenuItem
+        Caption = 'tbl_puskesmas'
+        OnClick = tblpuskesmas1Click
+      end
     end
     object profiel1: TMenuItem
       Caption = 'Profiel'
